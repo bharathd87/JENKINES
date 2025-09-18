@@ -1,5 +1,6 @@
 #!/bin/bash
-sudo apt update -y
-sudo mkdir test
-sudo apt install apache2 -y
-echo "<h1> testing purpose</h1>" | sudo tee /var/www/html/index.html
+if [ $1 -gt 5 ]; then
+echo "$1 is greater"
+else 
+echo "$1 is lesseer"
+fi
